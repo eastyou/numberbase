@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numberbase"
+version = "0.1.0"
+description = "进制转换练习纸：二进制、八进制、十进制、十六进制互转与可打印 A4 练习"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "number-base", "binary", "hex", "worksheet", "printable"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+numberbase = "numberbase.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/numberbase"
+Source = "https://github.com/eastyou/numberbase"
+
+[tool.setuptools]
+packages = ["numberbase"]
